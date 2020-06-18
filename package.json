@@ -1,64 +1,51 @@
 {
-  "name": "react-starter-kit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --inline=true --hot=true",
-    "start:nolivereload": "webpack-dev-server --config webpack.dev.js --inline=false",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
-    "browsersync": "browser-sync start --no-open --proxy http://localhost:8080/",
-    "build": "webpack -p --config webpack.prod.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "babel-core": "^6.25.0",
-    "babel-jest": "^21.0.2",
-    "babel-loader": "^7.1.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.4",
-    "eslint": "^4.1.0",
-    "eslint-loader": "^1.8.0",
-    "eslint-plugin-react": "^7.1.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "git-revision-webpack-plugin": "^2.5.1",
-    "html-webpack-plugin": "^2.28.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^21.0.0",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.4",
-    "postcss-loader": "^2.0.6",
-    "react-test-renderer": "^15.6.1",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.13",
-    "enzyme": "^2.9.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.2.2"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "identity-obj-proxy"
+    "name": "react-starter-kit",
+    "version": "1.0.0",
+    "description": "React starter kit",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel ./src/index.html",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "jest": "jest",
+        "cypress:open": "cypress open",
+        "eslint": "eslint src/",
+        "build": "parcel build ./src/index.html"
     },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "coverageDirectory": "coverage/"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vladimirze/react-starter-kit.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vladimirze/react-starter-kit/issues"
+    },
+    "homepage": "https://github.com/vladimirze/react-starter-kit#readme",
+    "dependencies": {
+        "@material-ui/core": "^4.10.2",
+        "axios": "^0.19.2",
+        "formik": "^2.1.4",
+        "formik-material-ui": "^2.0.0-beta.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.2.0",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+        "babel-jest": "^26.0.1",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "cypress": "^4.8.0",
+        "eslint": "^7.2.0",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^4.0.4",
+        "jest": "^26.0.1",
+        "parcel-bundler": "^1.12.4"
+    }
 }

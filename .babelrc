@@ -1,6 +1,10 @@
 {
   "presets": [
-     "react",
-     "env"
+    ["env", {
+      "targets": {
+        "node": "current",
+        "browsers": ["last 2 Chrome versions"]
+      }
+    }]
   ]
 }
