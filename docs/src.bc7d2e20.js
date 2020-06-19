@@ -906,4 +906,4 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"redux":"aVFJ","redux-thunk":"SaFO","redux-devtools-extension":"yP4S","./reducers/counterReducer":"gIg8","../middleware/logger":"CGm1","./reducers/usersReducer":"xtUT"}],"Focm":[function(require,module,exports) {
 "use strict";var e=a(require("react")),r=a(require("react-dom")),t=require("./App"),u=require("react-redux"),d=require("./redux/store");function a(e){return e&&e.__esModule?e:{default:e}}r.default.render(e.default.createElement(u.Provider,{store:d.store},e.default.createElement(t.App,null)),document.getElementById("root"));
 },{"react":"n8MK","react-dom":"NKHc","./App":"lY9v","react-redux":"jYIL","./redux/store":"tIDN"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.bc7d2e20.js.map
+//# sourceMappingURL=https://vladimirze.github.io/react-starter-kit/src.bc7d2e20.js.map

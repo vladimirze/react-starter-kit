@@ -9,7 +9,7 @@
         "jest": "jest",
         "cypress:open": "cypress open",
         "eslint": "eslint src/",
-        "build": "parcel build ./src/index.html -d docs"
+        "build": "parcel build ./src/index.html -d docs --public-url https://vladimirze.github.io/react-starter-kit/"
     },
     "repository": {
         "type": "git",
