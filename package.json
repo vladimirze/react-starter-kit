@@ -9,7 +9,7 @@
         "jest": "jest",
         "cypress:open": "cypress open",
         "eslint": "eslint src/",
-        "build": "parcel build ./src/index.html"
+        "build": "parcel build ./src/index.html -d docs"
     },
     "repository": {
         "type": "git",
